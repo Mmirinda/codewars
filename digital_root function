@@ -1,0 +1,9 @@
+def digital_root(n):
+    n = str(n)
+    separated = list(int(el) for el in n)
+    if sum(separated) >= 10: digital_root(sum(separated))
+    else: return (print(sum(separated)))
+
+digital_root(132189)
+
+>>>  6
